@@ -1,4 +1,4 @@
-import { wavRiffView } from "./wavRiff.js";
+import { wavRiffView } from './wavRiff.js';
 
 const file = document.getElementById('file');
 const result = document.getElementById('result');

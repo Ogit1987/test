@@ -1,1 +1,26 @@
-<link rel="stylesheet" href="main.css"/><title>Ogitがあれこれ試すページ</title><div class="global-container frame-border bg-dark">	<div class="header-container frame-border title-bg">		<h1 class="title title-color">Ogitがあれこれ試すページ</h1>		<p>htmlとかcssとかjsとか</p>	<!--header end--></div>	<div class="contents-container">		<h2 class="subTitle title-color">JavaScriptのファイル操作テスト</h2>		<div class="result-container frame-border">			<div class="input-container frame-border bg-dark">				<input type="file" id="file" class="input input-color">			<!--input end--></div>			<result id="result" class="result result-color">wavファイルを選択すると ここにフォーマット情報が表示されます</result>		<!--result end--></div>	<!--contents end--></div><!--global end--></div><script type="module" src="file.js"></script><!--<script type="module" src="wavRiff.js"></script>-->
+<link rel="stylesheet" href="main.css"/>
+
+<title>Ogitがあれこれ試すページ</title>
+
+<div class="global-container frame-border bg-dark">
+	<div class="header-container frame-border title-bg">
+		<h1 class="title title-color">Ogitがあれこれ試すページ</h1>
+		<p>htmlとかcssとかjsとか</p>
+	<!--header end--></div>
+
+	<div class="contents-container">
+		<h2 class="subTitle title-color">JavaScriptのファイル操作テスト</h2>
+
+		<div class="worker-container frame-border">
+			<div class="input-container frame-border bg-dark">
+				<input type="file" id="file" class="input input-color">
+			<!--input end--></div>
+
+			<div id="result" class="result-container result-color">
+				wavファイルを選択すると ここにフォーマット情報が表示されます
+			<!--result end--></div>
+		<!--worker end--></div>
+	<!--contents end--></div>
+<!--global end--></div>
+
+<script type="module" src="wavFormatViewer.js"></script>

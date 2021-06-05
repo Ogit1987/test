@@ -63,6 +63,6 @@ export function readWavFormat(source) {
 
 	if (addToTable('data size', binary.getNum(4)) === false) return table;
 
-	console.log('read complete')
+	console.log('read complete');
 	return table;
 }

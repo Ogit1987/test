@@ -9,7 +9,7 @@
 	setDisplay(display) { this.display = display; }
 	setItemClass(itemClass) { this.itemClass = itemClass; }
 	setCellClass(cellClass) { this.cellClass = cellClass; }
-	setCautionClass(cautionClass) { this.cautionClass = cautionClass;}
+	setCautionClass(cautionClass) { this.cautionClass = cautionClass; }
 
 	show(result) {
 		this.display.textContent = '';
@@ -21,13 +21,13 @@
 				html.push(`<div class="${this.itemClass}">`);
 
 				for (let j = 0, cellLength = result[i].length; j < cellLength; ++j)
-					html.push(`<div class="${this.cellClass[(i + skipCount) % this.cellClass.length]}">${result[i][j]}</div>`)
+					html.push(`<div class="${this.cellClass[(i + skipCount) % this.cellClass.length]}">${result[i][j]}</div>`);
 			} else {
 				html.push(`<div class="${this.cautionClass}">${result[i]}`);
 				skipCount = (skipCount + 1) % this.cellClass.length;
 			}
 
-			html.push('</div>')
+			html.push('</div>');
 		}
 		
 		this.display.insertAdjacentHTML('beforeend', html.join(''));
